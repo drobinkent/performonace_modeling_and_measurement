@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.12)  21 JAN 2020 00:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.12)  21 JAN 2020 23:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -785,6 +785,9 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 20--20
 [][]  
  []
 
+Missing character: There is no Ô in font cmss8!
+Missing character: There is no ¨ in font cmss8!
+Missing character: There is no Å in font cmss8!
 
 Overfull \hbox (51.0pt too wide) has occurred while \output is active
 [] [][] 
@@ -792,7 +795,15 @@ Overfull \hbox (51.0pt too wide) has occurred while \output is active
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./chapter 2.toc)
+] (./chapter 2.toc
+Missing character: There is no Ô in font cmss10!
+Missing character: There is no ¨ in font cmss10!
+Missing character: There is no Å in font cmss10!
+)
+Missing character: There is no Ô in font cmss8!
+Missing character: There is no ¨ in font cmss8!
+Missing character: There is no Å in font cmss8!
+
 Overfull \hbox (51.0pt too wide) has occurred while \output is active
 [] [][] 
  []
@@ -802,8 +813,14 @@ Overfull \hbox (51.0pt too wide) has occurred while \output is active
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 57.
+(Font)              using `OT1/cmss/bx/n' instead on input line 53.
 
+Missing character: There is no Ô in font cmss12!
+Missing character: There is no ¨ in font cmss12!
+Missing character: There is no Å in font cmss12!
+Missing character: There is no Ô in font cmss8!
+Missing character: There is no ¨ in font cmss8!
+Missing character: There is no Å in font cmss8!
 
 Overfull \hbox (51.0pt too wide) has occurred while \output is active
 [] [][] 
@@ -812,27 +829,57 @@ Overfull \hbox (51.0pt too wide) has occurred while \output is active
 [3
 
 ]
+LaTeX Font Info:    Try loading font information for U+msa on input line 72.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 72.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Missing character: There is no ‚ in font cmss10!
+Missing character: There is no Ä in font cmss10!
+Missing character: There is no ú in font cmss10!
+Missing character: There is no ‚ in font cmss10!
+Missing character: There is no Ä in font cmss10!
+Missing character: There is no ù in font cmss10!
+Missing character: There is no Ô in font cmss10!
+Missing character: There is no ¨ in font cmss10!
+Missing character: There is no Å in font cmss10!
+Missing character: There is no ‚ in font cmssbx10!
+Missing character: There is no Ä in font cmssbx10!
+Missing character: There is no ú in font cmssbx10!
+Missing character: There is no ‚ in font cmssbx10!
+Missing character: There is no Ä in font cmssbx10!
+Missing character: There is no ù in font cmssbx10!
+<images/Networkqueueswithprobabilisticrouting.jpg, id=132, 678.28406pt x 433.62
+pt>
+File: images/Networkqueueswithprobabilisticrouting.jpg Graphic file (type jpg)
+<use images/Networkqueueswithprobabilisticrouting.jpg>
+Package pdftex.def Info: images/Networkqueueswithprobabilisticrouting.jpg  used
+ on input line 72.
+(pdftex.def)             Requested size: 135.6544pt x 86.72246pt.
+Missing character: There is no Ô in font cmss8!
+Missing character: There is no ¨ in font cmss8!
+Missing character: There is no Å in font cmss8!
+
 Overfull \hbox (51.0pt too wide) has occurred while \output is active
 [] [][] 
  []
 
 [4
 
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 108.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 108.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-<images/simplequeue.jpg, id=160, 715.92468pt x 226.59656pt>
-File: images/simplequeue.jpg Graphic file (type jpg)
-<use images/simplequeue.jpg>
-Package pdftex.def Info: images/simplequeue.jpg  used on input line 108.
-(pdftex.def)             Requested size: 85.90724pt x 27.1904pt.
+ <./images/Networkqueueswithprobabilisticrouting.jpg>]
+<images/deterministicopenqueue.jpg, id=163, 714.41907pt x 299.61937pt>
+File: images/deterministicopenqueue.jpg Graphic file (type jpg)
+<use images/deterministicopenqueue.jpg>
+Package pdftex.def Info: images/deterministicopenqueue.jpg  used on input line 
+94.
+(pdftex.def)             Requested size: 214.32738pt x 89.8865pt.
+Missing character: There is no Ô in font cmss8!
+Missing character: There is no ¨ in font cmss8!
+Missing character: There is no Å in font cmss8!
 
 Overfull \hbox (51.0pt too wide) has occurred while \output is active
 [] [][] 
@@ -840,76 +887,16 @@ Overfull \hbox (51.0pt too wide) has occurred while \output is active
 
 [5
 
- <./images/simplequeue.jpg>]
-<images/closedbatchsystem.jpg, id=191, 389.95688pt x 358.33875pt>
-File: images/closedbatchsystem.jpg Graphic file (type jpg)
-<use images/closedbatchsystem.jpg>
-Package pdftex.def Info: images/closedbatchsystem.jpg  used on input line 133.
-(pdftex.def)             Requested size: 46.7928pt x 42.9988pt.
-Missing character: There is no ‚ in font cmss10!
-Missing character: There is no Ä in font cmss10!
-Missing character: There is no ú in font cmss10!
-Missing character: There is no ‚ in font cmss10!
-Missing character: There is no Ä in font cmss10!
-Missing character: There is no ù in font cmss10!
+ <./images/deterministicopenqueue.jpg>]
+Missing character: There is no Ô in font cmss8!
+Missing character: There is no ¨ in font cmss8!
+Missing character: There is no Å in font cmss8!
 
 Overfull \hbox (51.0pt too wide) has occurred while \output is active
 [] [][] 
  []
 
 [6
-
- <./images/closedbatchsystem.jpg>]
-<images/onevsmanymachine.jpg, id=219, 879.285pt x 386.19281pt>
-File: images/onevsmanymachine.jpg Graphic file (type jpg)
-<use images/onevsmanymachine.jpg>
-Package pdftex.def Info: images/onevsmanymachine.jpg  used on input line 162.
-(pdftex.def)             Requested size: 105.50964pt x 46.34113pt.
-
-Overfull \vbox (5.41121pt too high) detected at line 162
- []
-
-
-Overfull \hbox (51.0pt too wide) has occurred while \output is active
-[] [][] 
- []
-
-[7
-
- <./images/onevsmanymachine.jpg>]
-Overfull \hbox (51.0pt too wide) has occurred while \output is active
-[] [][] 
- []
-
-[8
-
-]
-<images/loadbalancer.jpg, id=277, 781.41937pt x 405.76593pt>
-File: images/loadbalancer.jpg Graphic file (type jpg)
-<use images/loadbalancer.jpg>
-Package pdftex.def Info: images/loadbalancer.jpg  used on input line 202.
-(pdftex.def)             Requested size: 93.76627pt x 48.6898pt.
-
-Overfull \vbox (30.02518pt too high) detected at line 202
- []
-
-
-Overfull \hbox (51.0pt too wide) has occurred while \output is active
-[] [][] 
- []
-
-[9
-
- <./images/loadbalancer.jpg>]
-Overfull \vbox (10.39096pt too high) detected at line 219
- []
-
-
-Overfull \hbox (51.0pt too wide) has occurred while \output is active
-[] [][] 
- []
-
-[10
 
 ]
 \tf@nav=\write6
@@ -921,39 +908,38 @@ Overfull \hbox (51.0pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `"chapter 2.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
  (./chapter 2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
 Package rerunfilecheck Info: File `"chapter 2".out' has not changed.
-(rerunfilecheck)             Checksum: 4CA0FF56E3EE124326A4720E136735D1;47.
+(rerunfilecheck)             Checksum: D7367E67621A76436016636DA6878A5B;71.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17229 strings out of 492982
- 331186 string characters out of 6134895
- 400889 words of memory out of 5000000
- 20377 multiletter control sequences out of 15000+600000
+ 17170 strings out of 492982
+ 329837 string characters out of 6134895
+ 398890 words of memory out of 5000000
+ 20328 multiletter control sequences out of 15000+600000
  13160 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,16n,61p,778b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmtt10.pfb>
-Output written on "chapter 2.pdf" (10 pages, 430830 bytes).
+ 56i,16n,61p,778b,579s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmtt10.pfb>
+Output written on "chapter 2.pdf" (6 pages, 284425 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 321 compressed objects within 4 object streams
- 22 named destinations out of 1000 (max. 500000)
- 143 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 250 PDF objects out of 1000 (max. 8388607)
+ 211 compressed objects within 3 object streams
+ 14 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
