@@ -1,1 +1,2 @@
-\beamer@sectionintoc {1}{Classiﬁcation of Queueing Networks}{3}{0}{1}
+\beamer@sectionintoc {1}{Queueing theory Terminology}{3}{0}{1}
+\beamer@sectionintoc {2}{Classification of Queueing Networks}{6}{0}{2}

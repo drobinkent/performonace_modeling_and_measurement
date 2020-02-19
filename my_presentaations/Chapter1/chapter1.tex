@@ -41,15 +41,16 @@ Design of Computer Systems- Ch 1}
     \framesubtitle{\textbf{\textit{Theory of Queues}}}
 	\begin{itemize}
 		\item The theory behind what happens when you have lots of jobs
-		\item what makes queues appear and how to make them go away
+		\item what makes queues appear and how to make them go away / Why queue 				size grows and shrinks?
 		\item Queueing theory applies anywhere that queues come up
 		\item Example
 			\begin{itemize}
-			\item CPU uses a time-sharing scheduler to serve a queue of jobs waiting for CPU time
-			\item Router in a network serves a queue of packets waiting to be routed.
+			\item CPU uses a time-sharing scheduler to serve a queue of jobs 						waiting for CPU time
+			\item Router in a network serves a queue of packets waiting to be 						routed.
 			\end{itemize}
-		\item Queueing theory is built on  \textbf{\textit{stochastic modeling and analysis}} 						\begin{itemize}
-					\item Model and analyze  service demands of jobs and the interarrival times of 							jobs as random 	variables. 
+		\item Queueing theory is built on  \textbf{\textit{stochastic modeling 					and analysis}} 						
+				\begin{itemize}
+					\item Model $+$ analyze  service demands of jobs and the 										interarrival times of jobs as random 											variables. 
 				\end{itemize}		  
 	\end{itemize}	    
     
@@ -62,7 +63,7 @@ Design of Computer Systems- Ch 1}
     \frametitle{Goal of Queueing Theory}
     \framesubtitle{\textbf{\textit{2 Goals}}}
 	\begin{itemize}
-		\item Predicting the system perfor- mance. Ex. 
+		\item Predicting the system performance. Ex. 
 		\begin{itemize}
 			\item predicting mean delay or delay variability in service   
 			\item number of jobs that will be in queue 
@@ -71,8 +72,7 @@ Design of Computer Systems- Ch 1}
 		\item Developing design of improved system
 		\item Example
 			\begin{itemize}
-			\item Can we build a better system from 1 slow discs or one faster disc
-			\item 
+			\item Can we build a better system from 1 slow discs or one faster 						disc
 			\end{itemize}
 	\end{itemize}	    
     
@@ -87,8 +87,8 @@ Design of Computer Systems- Ch 1}
 		\begin{itemize}
 			\item $\lambda = $ arrrival rate = No of jobs arrives per second
 			\item $\mu = $ service rate  = No of jobs served per second
-			\item \textbf{response time}= time diff. bet. job arrives until it completes service
-			\item $E[T]$ = mean response time $\sum(x. P(x))$. Can you serve customer within old 							time length?
+			\item \textbf{response time}= time diff. betn. job arrival time and  				until it completes service
+			\item $E[T]$ = mean response time $\sum(x. P(x))$. 
 			\begin{figure}
         		\begin{center}
 		            \includegraphics[scale=0.12]{images/simplequeue.jpg}
@@ -99,8 +99,9 @@ Design of Computer Systems- Ch 1}
 		\item \textbf{Question}: What if $\lambda  $ is doubled? 
 			\begin{itemize}
 			\item How the $E[T]$ changes? increases or decreases? 
+			\item Can you serve customer within old	time length?
 			\item If decreases, can using powerful cpu solve the problem?
-			\item How much powerful CPU is necessary
+			\item How much powerful CPU is necessary? ans: Less than double
 			\end{itemize}
 	\end{itemize}	    
     
