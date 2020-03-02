@@ -12,12 +12,25 @@
 \headcommand {\sectionentry {2}{Inverse-Transform Method}{4}{Inverse-Transform Method}{0}}
 \headcommand {\slideentry {2}{0}{1}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\slideentry {2}{0}{2}{5/5}{}{0}}
+\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{5}{Continuous Case}}
+\headcommand {\slideentry {2}{1}{1}{5/5}{Continuous Case}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {2}{0}{3}{6/6}{}{0}}
+\headcommand {\slideentry {2}{1}{2}{6/6}{Continuous Case}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@partpages {1}{6}}
-\headcommand {\beamer@subsectionpages {4}{6}}
-\headcommand {\beamer@sectionpages {4}{6}}
-\headcommand {\beamer@documentpages {6}}
-\headcommand {\gdef \inserttotalframenumber {6}}
+\headcommand {\beamer@subsectionpages {5}{6}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{7}{Discrete Case}}
+\headcommand {\slideentry {2}{2}{1}{7/7}{Discrete Case}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {2}{2}{2}{8/8}{Discrete Case}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@sectionpages {4}{8}}
+\headcommand {\beamer@subsectionpages {7}{8}}
+\headcommand {\sectionentry {3}{Accept-Reject Method}{9}{Accept-Reject Method}{0}}
+\headcommand {\slideentry {3}{0}{1}{9/9}{}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\beamer@partpages {1}{9}}
+\headcommand {\beamer@subsectionpages {10}{9}}
+\headcommand {\beamer@sectionpages {9}{9}}
+\headcommand {\beamer@documentpages {9}}
+\headcommand {\gdef \inserttotalframenumber {9}}

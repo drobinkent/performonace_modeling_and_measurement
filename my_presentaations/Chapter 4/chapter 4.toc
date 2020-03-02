@@ -1,2 +1,5 @@
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@sectionintoc {2}{Inverse-Transform Method}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Continuous Case}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Discrete Case}{7}{0}{2}
+\beamer@sectionintoc {3}{Accept-Reject Method}{9}{0}{3}
