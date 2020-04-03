@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Strong and Weak Laws of Large Numbers}{5}{0}{2}
+\beamer@sectionintoc {3}{Concept of Average}{8}{0}{3}
+\beamer@sectionintoc {4}{Simulation}{11}{0}{4}

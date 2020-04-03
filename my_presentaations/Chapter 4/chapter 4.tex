@@ -196,6 +196,7 @@ for Simulation
 		\item If X can take too many values $\rightarrow$ too many iterations
 		\end{itemize}
 		\item Solution: Find an inverse transform like continuous case
+		
 		  
 	\end{itemize}	   
     
@@ -227,19 +228,73 @@ for Simulation
 
 \subsection{Discrete Case}
 
-\section{Accept-Reject Method}
 
 \begin{frame}
     \frametitle{Accept-Reject Method}
     \framesubtitle{Discrete Case }
 	\begin{itemize}
-		\item Given: Efficient method for generating random variable Q with probability mass
-function {qj , j:discrete}, where qj = P {Q = j}.
-Output: Random variable P with probability mass function {pj , j:discrete}, where
-pj = P {P = j}.
-Requirement: For all j , we must have qj > 0 ⇐⇒ pj > 0. That is, P and Q take on
+		\item Given: Efficient method for generating random variable Q with probability mass function {$q_j , j:$discrete}, where $q_j = P {Q = j}$
+\item Output: Random variable $P$ with probability mass function {$p_j , j:$discrete}, where $p_j = P {P = j}$
+\item Requirement: For all j , we must have $q_j > 0 \Longleftarrow\Longrightarrow p_j > 0$. That is, P and Q take on
 the same set of values
+\item Example
+		{
+		\begin{figure}
+        \begin{center}
+		\includegraphics[scale=0.2]{images/accept_reject_discrete_q.jpg}
+        \end{center}
+		\end{figure}
+		} 
+		{
+		\begin{figure}
+        \begin{center}
+		\includegraphics[scale=0.2]{images/accept_reject_discrete_p.jpg}
+        \end{center}
+		\end{figure}
+		} 
 		  
+	\end{itemize}	   
+    
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Accept-Reject Method}
+    \framesubtitle{Discrete Case: algorithm  }
+	\begin{itemize}
+		\item Algorithm
+		{
+		\begin{figure}
+        \begin{center}
+		\includegraphics[scale=0.2]{images/accept_reject_algo.jpg}
+        \end{center}
+		\end{figure}
+		} 
+		Here c  $ > $1 
+		\item Proof details in book page 74
+		  
+	\end{itemize}	   
+    
+\end{frame}
+\subsection{Continuous Case}
+
+
+\begin{frame}
+    \frametitle{Accept-Reject Method}
+    \framesubtitle{Continuous Case  }
+	\begin{itemize}
+	\item Given: We know how to generate $Y$ with probability density function $f_Y (t)$.
+\item Goal: To generate $X$ with p.d.f. $f_X (t)$.
+\item Requirement: For all $t$, $f_Y (t) > 0 \Longleftarrow\Longrightarrow f_X (t) > 0$
+
+		\item Algorithm
+		{
+		\begin{figure}
+        \begin{center}
+		\includegraphics[scale=0.3]{images/accept_reject_cont_case_algo.jpg}
+        \end{center}
+		\end{figure}
+		} 		  
 	\end{itemize}	   
     
 \end{frame}

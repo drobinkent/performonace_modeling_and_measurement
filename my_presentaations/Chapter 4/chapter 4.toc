@@ -3,3 +3,5 @@
 \beamer@subsectionintoc {2}{1}{Continuous Case}{5}{0}{2}
 \beamer@subsectionintoc {2}{2}{Discrete Case}{7}{0}{2}
 \beamer@sectionintoc {3}{Accept-Reject Method}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{Discrete Case}{10}{0}{3}
+\beamer@subsectionintoc {3}{2}{Continuous Case}{12}{0}{3}

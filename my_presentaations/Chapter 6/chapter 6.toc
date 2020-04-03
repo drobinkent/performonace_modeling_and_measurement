@@ -1,0 +1,3 @@
+\beamer@sectionintoc {1}{Little\IeC {\textquoteright }s Law}{3}{0}{1}
+\beamer@sectionintoc {2}{ The Forced Flow Law}{6}{0}{2}
+\beamer@sectionintoc {3}{ Bottleneck Law}{7}{0}{3}

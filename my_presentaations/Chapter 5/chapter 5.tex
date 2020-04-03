@@ -1,0 +1,260 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Presentation of Beamer UNL Theme
+%   Beamer Presentation by Chris Bourke
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{beamer}
+
+\usetheme[hideothersubsections]{UNLTheme}
+\usepackage[postscript]{ucs}
+\usepackage[utf8x]{inputenc}
+
+\title{Performance Modeling and
+Design of Computer Systems- Ch 5 \\
+Sample Paths, Convergence,
+and Averages
+}
+\author{Debobroto Das Robin} %
+\institute{Kent State University}
+\date{Spring 2020}
+
+
+
+
+\begin{document}
+
+%{% open a Local TeX Group
+%\setbeamertemplate{sidebar}{}
+\begin{frame}
+        \titlepage
+        \begin{center}
+    \href{mailto:drobin@kent.edu}{\color{blue}{\texttt{drobin@kent.edu}}}
+        \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+
+
+\section{Introduction}
+
+
+\begin{frame}
+\frametitle{Convergence}
+\framesubtitle{\textbf{\textit{}}}
+\begin{itemize}
+\item \textbf{Definitiion}  A sequence $\{a_n : n = 1, 2, \dot{...}\}$ converges to b as $ n \rightarrow \infty$ over a sample path , mathmetically
+$$\lim_{n\to\infty} a_n = b$$
+\item Convergence for random variable ( 2 erquivalent def)
+	\begin{itemize}
+	\item The sequence of random variables $\{Y_n : n = 1, 2, \dot{...}\}$ 			converges almost surely to $\mu$, written
+			$Y_n \rightarrow \mu , as :\ n \rightarrow \infty$
+	\item  The sequence converges with probability 1, written
+			$Y_n \rightarrow ,\mu :\ as :\ n \rightarrow \infty$ with 							probability $p =$  1
+		if, $\forall k > 0, P \{ \lim_{n \rightarrow \infty} ( Y_n - \mu)> k\}= 0$
+
+	\end{itemize}
+\end{itemize}
+	
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Convergence}
+\framesubtitle{\textbf{\textit{}}}
+\begin{itemize}
+\item \textbf{Sample path} of a stochastic process is a particular realisation of the process, i.e. a particular set of values $Y(t)$ for all t
+
+Example: A coin is tossed n times. the probability of head in each toss forms a path. This is a sample path  $\frac{1}{2}$,$0$, $\cdots{},\frac{1}{2}$
+
+\item Convergence is considered over a sample path
+	
+\end{itemize}	    
+    
+\end{frame}
+
+\section{Strong and Weak Laws of Large Numbers}
+\begin{frame}
+\frametitle{Weak Law of large numbers}
+\framesubtitle{\textbf{\textit{}}}
+\begin{itemize}
+\item Let $X_1 , X_2 , X_3 , . . .$ be i.i.d. (independent and identically distributed) random variables with mean $E [X]$ . Let
+$$S_n = {\sum}_{i=1}^{n} X_i$$ and $$Y_n = \frac{S_n}{n}$$
+
+Then \textbf{$Y_n$ converges in probability to $E[X]$}, 
+mathemetically $Y_n \rightarrow E[X]$ , as $n \rightarrow \infty$
+
+Equivalently, $\forall k > 0, \lim_{n \rightarrow \infty} P \{  | Y_n - E[X]| > k)\}= 0$
+
+
+\item
+	
+\end{itemize}	    
+    
+\end{frame}
+
+\begin{frame}
+\frametitle{Strong Law of large numbers}
+\framesubtitle{\textbf{\textit{}}}
+\begin{itemize}
+\item Let $X_1 , X_2 , X_3 , . . .$ be i.i.d. (independent and identically distributed) random variables with mean $E [X]$ . Let
+$$S_n = {\sum}_{i=1}^{n} X_i$$ and $$Y_n = \frac{S_n}{n}$$
+
+Then \textbf{$Y_n$ converges almost \textit{surely} to $E[X]$}, 
+mathemetically $Y_n \rightarrow E[X]$ , as $n \rightarrow \infty$
+
+Equivalently, $\forall k > 0, \lim_{n \rightarrow \infty} P \{  | Y_n - E[X]| \geq k)\}= 0$
+
+
+\item
+	
+\end{itemize}	    
+    
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Example of Strong \& Weak Law of large numbers}
+\framesubtitle{\textbf{\textit{}}}
+\begin{itemize}
+\item Let $X_i$ are all 0/1 random variables (coin toss) with mean $\frac{1}{2}$
+\item Each sample path is an infinite sequence of coin flips
+
+\item \textbf{Strong Law} : for \textbf{“almost every”} sample path, if we average the coin flips far out enough (large $n$) along the path, we will get convergence to $\frac{1}{2}$
+
+\item \textbf{Weak Law} : Says convergence is not almost sure. Convergence will happen with a probability. 
+	
+\end{itemize}	    
+    
+\end{frame}
+
+\section{Concept of Average}
+
+\begin{frame}
+\frametitle{Time Average versus Ensemble Average}
+\framesubtitle{\textbf{\textit{}}}
+\begin{itemize}
+\item Scenario: a single FCFS queue,  at every second a new job is
+added to the queue with probability $p$ and at every second the job in service (if there is) completed with probability $q$ , where $q > p$. Let $N (v) =$ number of jobs in the system at time $v$ . 
+
+\item What is the avg. number  of jobs in the queue
+
+\item  \textbf{Time Average}: $$\overline{N}^{Time Avg} = \lim_{t \rightarrow \infty} \: \frac{\int_0^t \: N(v)dv}{t}$$
+
+\item  \textbf{Ensemble Average}: $$\overline{N}^{Ensemble} = \lim_{t \rightarrow \infty} \: E[N(t)] = {\sum^{\infty}_{i=0}} ip_i$$
+
+Where, 
+$$p_i = \lim_{t \rightarrow \infty} \: P\{ N(t) = i \}$$
+
+	
+\end{itemize}	    
+    
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Time Average versus Ensemble Average}
+\framesubtitle{\textbf{\textit{Interpretation: Time Average}}}
+\begin{itemize}
+\item Consider the FCFS scenario again 
+
+
+\item  \textbf{Time Average}: Consider a sample path over a long period $t$, mointor \# of jobs in system , then take avg
+
+Example: queue  start empty. 
+at time 1, an arrival , no departure N (1) = 1. 
+
+at time 2, an arrival , no departure N (2) = 2). 
+
+At time 3, an arrival , no departure N (3) = 3 
+
+at time 4, no arrival and a departure N (4) = 2, etc. 
+
+The average number of jobs in the system by time 4 for this process is (0 + 1 + 2 + 3 + 2)/5 = 8/5.
+
+\item  \textbf{Problem of Time Average}: It takes only a single path. If this is one of the \textbf{rare} bad path then avg may be not reprsentitive
+
+
+	
+\end{itemize}	    
+    
+\end{frame}
+
+\begin{frame}
+\frametitle{Time Average versus Ensemble Average}
+\framesubtitle{\textbf{\textit{Interpretation: Ensemble Average}}}
+\begin{itemize}
+\item Consider the FCFS scenario again 
+\item \textbf{Time Average}: at time 1 there is some probability that the system
+is still empty and there is some probability that the system contains one job.
+Same for time 2,3,4....
+\item Calculate the $E [N (i)] = i p(i) =$ expectation that the system have $i$ jobs
+\item then apply 
+$$p_i = \lim_{t \rightarrow \infty} \: P\{ N(t) = i \}$$
+
+\end{itemize}	    
+    
+\end{frame}
+
+\section{Simulation}
+
+\begin{frame}
+\frametitle{How to Simulate }
+\framesubtitle{\textbf{\textit{}}}
+\begin{itemize}
+\item For ergodic system ( positive recurrent, aperiodic, \& irreducible) both are equal
+\begin{itemize}
+\item \textbf{irreducibility}: a processcan reach from any state to any other state (think of the state as the number of jobs in the system). This
+is important for ensuring that the choice of initial state does not matter.
+
+\item  \textbf{positive recurrent :} if for any state $i$, the state is revisited infinitely often, and the mean time between visits
+to state $i$ (renewals) is finite. Furthermore, every time that we visit state i the system will probabilistically restart itself
+
+\end{itemize} 
+\item \textbf{Time Avg :} sampling a single process over a very long period of time and averaging those samples
+\item \textbf{Ensemble Avg :} generating many independent processes and taking their Ensemble average at some far-out time $t$ 
+
+\item {Ensemble Avg is better :}
+
+\begin{itemize}
+\item ensemble average can be obtained in parallel, by running simulations on different cores or different machines.
+
+\item  independent data points allow us to generate
+confidence intervals, which allow us to bound the deviation in our result
+\end{itemize}
+
+\end{itemize}	    
+    
+\end{frame}
+
+\begin{frame}
+\frametitle{Average Time in System }
+\framesubtitle{\textbf{\textit{}}}
+\begin{itemize}
+\item two versions of the average time in system. 
+
+Assume:
+
+$T_i$ is the time in system of the $i$th arrival 
+
+$ A(t)$ is the number of arrivals by time $t$
+
+\item \textbf{For Time Avg}
+
+$$ \overline{T}^{Time Avg.} = {{\lim}_{t \rightarrow \infty}} 
+\frac{{{\sum}_{i=1}}^{A(t) T_i} }{a(t)} $$
+
+\item \textbf{For Ensemble Avg.}
+$$ \overline{T}^{Ensemble} = \lim_{i \rightarrow \infty} E[T_i] $$
+\end{itemize}	    
+    
+\end{frame}
+    
+\end{document}

@@ -1,0 +1,72 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Presentation of Beamer UNL Theme
+%   Beamer Presentation by Chris Bourke
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{beamer}
+
+\usetheme[hideothersubsections]{UNLTheme}
+\usepackage[postscript]{ucs}
+\usepackage[utf8x]{inputenc}
+
+\title{Performance Modeling and
+Design of Computer Systems- Ch 7 \\
+Modification Analysis: ``What-If'' for Closed Systems }
+\author{Debobroto Das Robin} %
+\institute{Kent State University}
+\date{Spring 2020}
+
+
+
+
+\begin{document}
+
+%{% open a Local TeX Group
+%\setbeamertemplate{sidebar}{}
+\begin{frame}
+        \titlepage
+        \begin{center}
+    \href{mailto:drobin@kent.edu}{\color{blue}{\texttt{drobin@kent.edu}}}
+        \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+
+
+\section{Little’s Law}
+
+
+\section{  Bottleneck Law}
+
+\begin{frame}
+\frametitle{  Bottleneck Law}
+\framesubtitle{\textbf{\textit{}}}
+\begin{itemize}
+\item Let, $D_i$ =  total service demand on device $i$ for all visits of a single job (i.e., a single interaction). That is,
+$$D_i = {{\sum}_{j=1}}^{V_i} {S_i}^{(j)}$$
+${S_i}^{(j)}$ = service time required by the $j$ th visit of the job to server $i$
+\item  assuming that the number of visits a job makes to device i is not affected by its service demand at the device.
+$$E [D_i ] = E [V_i ] \cdot E [S_i ]$$
+
+\item \textbf{Bottleneck Law} 
+$$ {\rho}_i = X \cdot E[D_i] $$
+
+\item  \textbf{Explanation}: $X$ jobs/sec arriving into system. Each  arrivals
+into the system contributes $E [D_i ]$ seconds of work for device $i$. So device i is busy for $X \cdot E [D_i ]$ seconds out of every second (e.g., device i might be busy for half a second
+out of every second). 
+
+Thus $X \cdot E [D_i ]$ represents the utilization of device i.
+
+
+
+\end{itemize}
+	
+\end{frame}
+    
+\end{document}
