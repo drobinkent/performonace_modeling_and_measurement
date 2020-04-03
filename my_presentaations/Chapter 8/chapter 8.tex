@@ -1,0 +1,194 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Presentation of Beamer UNL Theme
+%   Beamer Presentation by Chris Bourke
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{beamer}
+
+\usetheme[hideothersubsections]{UNLTheme}
+\usepackage[postscript]{ucs}
+\usepackage[utf8x]{inputenc}
+
+\title{Performance Modeling and
+Design of Computer Systems- Ch 8 \\
+Discrete-Time Markov Chains}
+\author{Debobroto Das Robin} %
+\institute{Kent State University}
+\date{Spring 2020}
+
+
+
+
+\begin{document}
+
+%{% open a Local TeX Group
+%\setbeamertemplate{sidebar}{}
+\begin{frame}
+        \titlepage
+        \begin{center}
+    \href{mailto:drobin@kent.edu}{\color{blue}{\texttt{drobin@kent.edu}}}
+        \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+
+
+\section{Introduction}
+
+
+
+\begin{frame}
+\frametitle{  Background \& Motivation}
+\framesubtitle{\textbf{\textit{}}}
+\begin{itemize}
+\item Upto Chapter 7, We have only deduced some approximate bound for performance evaluation of closed systems. 
+\item For Open system we have derived very few useful info
+\item \textbf{Goal}: How we can derive more performance matrix of a system
+\item \textbf{Approach Used in This chapter:}  Using \textbf{Markov Model}
+\begin{itemize}
+\item Not all system can be modeled using Markov chain
+\item Exponential and Geomoetric distribution shows better suitability to Markov chain
+\item In many cases, non Markovian workloads can be approximated by mixtures of Exponential distributions, and hence still lend themselves to Markov chain analysis
+
+\end{itemize}
+\item \textbf{Question}: How to understand whether a workload is suitable for analysis uinsg Markov chain
+\end{itemize}
+	
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{ Markov Chains}
+\framesubtitle{\textbf{\textit{}}}
+\begin{itemize}
+\item 2 variations
+\begin{itemize}
+\item \textbf{Discrete-Time Markov Chains} (DTMCs): Every event is broken up into synchronized time steps. An event (arrival or departure) can only occur at the end of a time step.
+
+$\rightarrow$ Not so Good for modeling Computer Systems
+\item \textbf{Continuous-Time Markov Chains (CTMCs)}: events can happen at any moment in time. 
+
+$\rightarrow$ Convenient for modeling systems.
+
+\item \textbf{A stochastic process} is simply a sequence of random variables.
+
+\end{itemize}
+
+\item 
+\end{itemize}
+	
+\end{frame}
+
+\section{DTMC}
+\begin{frame}
+\frametitle{ Discrete-time Markov chain}
+\framesubtitle{\textbf{\textit{}}}
+\begin{itemize}
+\item  \textbf{DTMC (discrete-time Markov chain)} is a stochastic process
+$\{X_n , n = 0, 1, 2, . . .\}$, where $X_n$ denotes the state at (discrete) time step n and such that, $ \forall n \geq 0, \: \forall i, j , \: and \: \forall i_0 , \cdots  i_{n-1} $
+$$ P \{ X_{n+1}  = j | X_n = i, X_{n-1} = i_{n-1},\cdots , X_0 = i_0 \}$$ 
+$$= P \{ X_{n +1} = j | X_n = i\} = P_{ij} (by stationarity) $$
+
+Here $P_{ij}$ is independent of the time step and of past history.
+\item \textbf{Interpretation}
+\begin{itemize}
+\item  \textbf{Markovian Property (1st equality)}: conditional distribution of
+any future state $X_{n +1}$ , given past states $X_0 , X_1 , \cdots , X_{n-1}$ , and given the present state $X_n$ , is independent of past states and depends only on the present state $X_n$ .
+
+\item \textbf{``stationary'' property}:  second equality indicates that the transition probability is independent of time.
+
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Discrete-time Markov chain}
+\framesubtitle{\textbf{\textit{ transition probability matrix}}}
+\begin{itemize}
+\item  \textbf{ Transition probability matrix} ($P_{ij}$): $(i,j)$ )entry, $P_{ij}$ , represents the probability of moving to state $j$ on the next transition, given that the current state is $i$
+
+
+\item $P$, might have infinite order, if there are infinitely many states.
+
+\item  $ \sum_j P_{ij} = 1, \: \forall i$, because, given
+that the DTMC is in state $i$, it must next transition to some state $j$
+
+\item Example Page 132
+
+\end{itemize}
+	
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Powers of P}
+\framesubtitle{\textbf{\textit{ n-Step Transition Probabilities}}}
+\begin{itemize}
+\item  Let $P^n =  {(p^n)}_{ij} = P \cdot P \cdot \cdot \cdot P$, multiplied n times. 
+\item \textbf{Meaning of $P^n$ : } For a M -state DTMC, as shown
+$${{P}_{ij}}^n = {{\sum}_{k=0}}^{M-1} {{P}_{ik}}^{n-1} P_{kj}  $$
+$$\text{=  Probability of being in state j in n steps, }$$
+$$\text{  given we are in state i now.}$$
+
+\item \textbf{Limiting Probabilities}: For large $n$
+
+$$ \pi_{j}= {\lim}_{n \rightarrow \infty} {{P}_{ij}}^n = {({\lim}_{n \rightarrow \infty} {{P}}^n)}_{ij} $$
+$$\text{ = limiting probability of being in state j}$$
+$$\text{ infinitely far into the future, given that we started in state i}$$
+
+
+\item in $\pi_{j}$ there is no $i \rightarrow $ means independent of initial state  
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Powers of P}
+\framesubtitle{\textbf{\textit{ n-Step Transition Probabilities}}}
+\begin{itemize}
+\item A Markov chain for which  \textbf{limiting probabilities} exist is said to be \textbf{stationary} or in \textbf{steady state} if the initial state is chosen according to the stationary probabilities.
+
+\item \textbf{Finding the Limiting Probabilities in a Finite-State DTMC} :  given the limiting distribution $\{ {\pi}_j,j=0,1,2,\cdots , (M-1)\}$
+exists, we can obtain it by solving the stationary equations
+$$\overrightarrow{\pi} \cdot P =  \overrightarrow{\pi} \: and  \: {{\sum}_{i=0}}^{M-1} \pi_{i}= 1$$
+Where $\overrightarrow{\pi} = (\pi_0 , \pi_1 , \cdots , \pi_{M-1})$
+
+\item Example and use case : page 138
+\end{itemize}
+\end{frame}
+
+%==============
+\section{Infinite-State DTMCs}
+
+\begin{frame}
+\frametitle{Infinite-State DTMCs}
+\framesubtitle{\textbf{\textit{ n-Step Transition Probabilities}}}
+\begin{itemize}
+\item Markov chain with an infinite number of states
+\item \textbf{$P_{ij}$}  has infinite order
+\item \textbf{limiting probability distribution on the states}
+$\overrightarrow{\pi} = (\pi_0 , \pi_1 , \cdots ) $   where 
+$ \pi_{j}= {\lim}_{n \rightarrow \infty} {{P}_{ij}}^n $ and 
+${{\sum}_{i=0}}^{\infty} \pi_{j}= 1$
+
+\item If limiting distrivution exits then $\overrightarrow{\pi} $ is a stationary distribution also (Proof in book)
+
+\item {How to Solve infinitie number of Equations :}
+$$\pi_i = (\frac{r}{s})^i \pi_0$$
+Look at book page 144
+
+
+\item \textbf{\textit{I still need to work on understading how to use this formula for using stationary distribution}}
+
+\item \textbf{\textit{We are skipping chapter 9 as it is too theroretical discussion}}
+\end{itemize}
+\end{frame}
+   
+\end{document}

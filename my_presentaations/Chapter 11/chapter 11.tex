@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Presentation of Beamer UNL Theme
+%   Beamer Presentation by Chris Bourke
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{beamer}
+
+\usetheme[hideothersubsections]{UNLTheme}
+\usepackage[postscript]{ucs}
+\usepackage[utf8x]{inputenc}
+
+\title{Performance Modeling and
+Design of Computer Systems- Ch 10 \\
+Exponential Distribution and the Poisson Process}
+\author{Debobroto Das Robin} %
+\institute{Kent State University}
+\date{Spring 2020}
+
+
+
+
+\begin{document}
+
+%{% open a Local TeX Group
+%\setbeamertemplate{sidebar}{}
+\begin{frame}
+        \titlepage
+        \begin{center}
+    \href{mailto:drobin@kent.edu}{\color{blue}{\texttt{drobin@kent.edu}}}
+        \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+
+
+\section{ Definition of the Exponential Distribution}
+
+
+
+\begin{frame} 
+\frametitle{ Exponential Distribution}
+\framesubtitle{\textbf{\textit{}}}
+\begin{itemize}
+\item A random variable X is distributed Exponentially with rate $\lambda$,
+$$X \sim Exp(\lambda)$$
+If $X$  has the probability density function:
+\begin{equation*}
+f(x) = \begin{cases}
+\lambda e^{- \lambda x} \: x \geq 0\\
+0 \: \: \: \: \: \: \:  x <0
+\end{cases}
+\end{equation*}
+The cumulative distribution function,
+\begin{equation*}
+F(x) = P\{ X \leq x \} = {{\int}^x}_{-\infty} f(y)dy = 
+ \begin{cases}
+1 -  e^{- \lambda x} \: x \geq 0\\
+0 \: \: \: \: \: \: \:  x <0
+\end{cases}
+\end{equation*}
+\end{itemize}
+	
+\end{frame}
+
+
+
+
+\begin{frame} 
+\frametitle{ Exponential Distribution}
+\framesubtitle{\textbf{\textit{}}}
+\begin{itemize}
+
+\item Mean of Exp Dis. 
+$$E[X] = {{\int}^{\infty}}_{-\infty} xf(x)dx = \frac{1}{\lambda}$$
+
+\item second moment  of Exp Dis. 
+$$E[X^2] = \frac{2}{{\lambda}^2}$$
+
+
+\item variance of Exp Dis. 
+$$Var(x) = E[X^2] - (E[X])^2 = = \frac{1}{{\lambda}^2}$$
+\end{itemize}
+	
+\end{frame}
+
+
+
+
+\begin{frame} 
+\frametitle{ Exponential Distribution}
+\framesubtitle{\textbf{\textit{}}}
+\begin{itemize}
+
+\item Mean of Exp Dis. 
+$$E[X] = {{\int}^{\infty}}_{-\infty} xf(x)dx = \frac{1}{\lambda}$$
+
+\item second moment  of Exp Dis. 
+$$E[X^2] = \frac{2}{{\lambda}^2}$$
+
+
+\item variance of Exp Dis. 
+$$Var(x) = E[X^2] - (E[X])^2 = = \frac{1}{{\lambda}^2}$$
+
+\item Exp Dist. is memoryless : next state ($(t=1)$th) is independent of current state ($t$'th)
+\end{itemize}
+
+
+	
+\end{frame}
+
+
+   
+\end{document}
