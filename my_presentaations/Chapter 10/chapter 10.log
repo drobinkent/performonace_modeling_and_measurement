@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.18)  3 APR 2020 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.18)  9 APR 2020 14:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -668,7 +668,8 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-)) (./chapter 10.aux)
+))
+No file "chapter 10".aux.
 \openout1 = `"chapter 10.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -685,7 +686,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -765,8 +765,6 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 25.
 LaTeX Info: Redefining \pageref on input line 25.
 LaTeX Info: Redefining \nameref on input line 25.
-
-(./chapter 10.out) (./chapter 10.out)
 \@outlinefile=\write5
 \openout5 = `"chapter 10.out"'.
 
@@ -797,7 +795,8 @@ Dictionary: translator-theorem-dictionary, Language: English
 ) (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-(./chapter 10.nav)
+No file "chapter 10".nav.
+
 Overfull \hbox (6.0pt too wide) in paragraph at lines 25--25
 [][]  
  []
@@ -809,7 +808,10 @@ Overfull \hbox (51.0pt too wide) has occurred while \output is active
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./chapter 10.toc)
+] (./chapter 10.toc
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+))
 Overfull \hbox (51.0pt too wide) has occurred while \output is active
 [] [][] 
  []
@@ -817,25 +819,6 @@ Overfull \hbox (51.0pt too wide) has occurred while \output is active
 [2
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 43.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 43.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\utf@viii@undeferr' on input line 43.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 43.
-
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
-File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-)
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 54.
@@ -869,17 +852,17 @@ Package rerunfilecheck Warning: File `"chapter 10".out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `"chapter 10".out':
-(rerunfilecheck)             Before: 54D14FBCF8A7620B34604196639BB419;66
-(rerunfilecheck)             After:  467902E8908F859A661546C6DD700327;123.
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  54D14FBCF8A7620B34604196639BB419;66.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17776 strings out of 494510
- 339649 string characters out of 6176236
- 420352 words of memory out of 5000000
- 21052 multiletter control sequences out of 15000+600000
+ 17742 strings out of 494510
+ 339107 string characters out of 6176236
+ 420229 words of memory out of 5000000
+ 21026 multiletter control sequences out of 15000+600000
  6220 words of font info for 23 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  48i,16n,63p,779b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -887,10 +870,10 @@ Here is how much of TeX's memory you used:
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "chapter 10.pdf" (3 pages, 55147 bytes).
+Output written on "chapter 10.pdf" (3 pages, 55590 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
+ 140 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
  8 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 

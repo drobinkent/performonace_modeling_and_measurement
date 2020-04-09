@@ -1,1 +1,1 @@
-\beamer@sectionintoc {1}{ Google\begingroup \let \relax \relax \endgroup [Pleaseinsert\PrerenderUnicode {’}intopreamble]s PageRank Algorithm}{3}{0}{1}
+\beamer@sectionintoc {1}{ Google\IeC {\textquoteright }s PageRank Algorithm}{3}{0}{1}

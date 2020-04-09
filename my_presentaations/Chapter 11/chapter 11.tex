@@ -69,11 +69,11 @@ F(x) = P\{ X \leq x \} = {{\int}^x}_{-\infty} f(y)dy =
 \end{frame}
 
 
-
+\section{Properties of Exp. Dis.}
 
 \begin{frame} 
 \frametitle{ Exponential Distribution}
-\framesubtitle{\textbf{\textit{}}}
+\framesubtitle{\textbf{\textit{Properties -1}}}
 \begin{itemize}
 
 \item Mean of Exp Dis. 
@@ -94,7 +94,7 @@ $$Var(x) = E[X^2] - (E[X])^2 = = \frac{1}{{\lambda}^2}$$
 
 \begin{frame} 
 \frametitle{ Exponential Distribution}
-\framesubtitle{\textbf{\textit{}}}
+\framesubtitle{\textbf{\textit{Properties -2}}}
 \begin{itemize}
 
 \item Mean of Exp Dis. 
@@ -110,10 +110,116 @@ $$Var(x) = E[X^2] - (E[X])^2 = = \frac{1}{{\lambda}^2}$$
 \item Exp Dist. is memoryless : next state ($(t=1)$th) is independent of current state ($t$'th)
 \end{itemize}
 
+\end{frame}
 
+
+
+\begin{frame} 
+\frametitle{ Exponential Distribution}
+\framesubtitle{\textbf{\textit{Properties -3}}}
+\begin{itemize}
+\item Given $X_1 \sim Exp(\lambda_1 ), X_2 \sim Exp(\lambda_2 ), X_1 \perp X_2$. then 
+$$P \{X_1 < X_2 \} =P \{X_1 < X_2 | X_2 = x\}  =  \frac{\lambda_1}{\lambda_1 + \lambda_2}$$  
+\item 
+if $ X = min(X_1 , X_2 )$ then $$ X \sim Exp(\lambda_1 + \lambda_2 )$$
+
+$ \perp $ : independent and identically  Distributed
+
+\item \textbf{Example:} A server can crash bcz of power supply and  disk. both one have lifetime with exponential distribution. Find probability that the system failed when it occurs, is caused by the power supply?
+ 
+\item 
+
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame} 
+\frametitle{ Exponential Distribution}
+\framesubtitle{\textbf{\textit{Real Life Examples}}}
+\begin{itemize}
+
+\item \textbf{failure rate function $r(t)$ ( hazard rate function) :} Let $X$ be a continuous random variable with probability density function
+$f(t)$ and cumulative distribution function $F(t) = P \{X > t\}$. Then
+$$r(t) = \frac{r(t)}{F(t)}$$
+\item  \textbf{Decreasing failure rate} : $P \{X>s+ t|X>s\}$ goes up as $s$.   $r(t)$ is strictly decreasing in t
+\begin{itemize}
+\item UNIX job: More CPU a job used up so far, the more CPU likely to use more
+\end{itemize}
+
+\item  \textbf{Increasing failure rate} : $P \{X>s+ t|X>s\}$ goes down as $s$.  $r(t)$ is strictly increasing in t 
+\begin{itemize}
+\item A car’s lifetime. The older a car is, the less likely that it will survive another, say, t = 6 years.
+\end{itemize}
+
+\end{itemize}
 	
 \end{frame}
 
+\section{Relation with other Distribution}
+
+\begin{frame} 
+\frametitle{Relating Exponential to Geometric via $\delta$-Steps}
+\framesubtitle{\textbf{\textit{For detailed proof look at page 210}}}
+\begin{itemize}
+\item \textbf{Geometric distribution} can be viewed as the number of flips needed to get a ``success'' 
+\item \textbf{Exponential distribution } is the time until “success.”
+\item \textbf{Unification:} imagine each unit of time
+as divided into $n$ pieces, each of size $\delta = \frac{1}{n}$ , and suppose that a trial (flip) occurs every $\delta$ time period, rather than at unit times.
+
+\item Let $$X \sim Exp(\lambda)$$
+$$Y \sim Geometric(p = \lambda \delta | flip \: every \: \delta -step)$$
+
+\item Y denotes the number of flips until success. Let $\tilde{Y}$ is  the time until success under $Y$ .
+$E[\tilde{Y}] $ = (avg. number trials until success) $*$ (time per trial) = 
+$\frac{1}{\lambda \delta} \cdot \delta = \frac{1}{\lambda }$ 
+$\rightarrow $ Implies the distribution of random variable  $X$
+
+\end{itemize}
+	
+\end{frame}
+
+
+
+\section{Relation with Poisson Process}
+
+\begin{frame} 
+\frametitle{Poisson Process}
+\framesubtitle{\textbf{\textit{Need to make a slide to express relation between possion process and exponential distribution}}}
+\begin{itemize}
+\item Poisson process is the most widely used model for arrivals into a system for two reasons
+\begin{itemize}
+\item Markovian properties of the Poisson process make it analytically tractable.
+\item In many cases, it is an excellent model. For example, In communications networks, such as the telephone system, it is a good model
+for the sequence of times at which telephone calls are originated.
+\end{itemize}
+
+\item  Poisson process appears often in nature when we are observing the aggregate effect of a large number of individuals or particles operating independently
+
+\item \textbf{Definition:
+A Poisson process with rate $\lambda$ is a sequence of events such that the interarrival
+times are i.i.d. Exponential random variables with rate $\lambda$ and $N (0) = 0$}.
+
+\end{itemize}
+	
+\end{frame}
+
+
+\begin{frame} 
+\frametitle{Poisson Process}
+\framesubtitle{\textbf{\textit{Merging and Splitting}}}
+\begin{itemize}
+\item \textbf{Merging :}  Given two independent Poisson processes, where process 1 has rate $\lambda_1$ and process 2 has rate $\lambda_2$ , the merge of process 1 
+and process 2 is a single Poisson process with rate $(\lambda_1+\lambda_2)$
+\item \textbf{Splitting :}  Given a Poisson process with rate $\lambda$ , suppose that each event is
+classified ``type A'' with probability $p$ and ``type B'' with probability 
+$1-p$. Then
+type A events form a Poisson process with rate $p \lambda$, type B events form a Poisson
+process with rate $(1-p)\lambda$, and these two processes are independent. $$P(AB) = P(A) \cdot P(B)$$
+\end{itemize}
+	
+\end{frame}
 
    
 \end{document}

@@ -1,0 +1,69 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Presentation of Beamer UNL Theme
+%   Beamer Presentation by Chris Bourke
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{beamer}
+
+\usetheme[hideothersubsections]{UNLTheme}
+\usepackage[postscript]{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\title{Performance Modeling and
+Design of Computer Systems- Ch 13 \\
+M/M/1 and PASTA}
+\author{Debobroto Das Robin} %
+\institute{Kent State University}
+\date{Spring 2020}
+
+
+
+
+\begin{document}
+
+%{% open a Local TeX Group
+%\setbeamertemplate{sidebar}{}
+\begin{frame}
+        \titlepage
+        \begin{center}
+    \href{mailto:drobin@kent.edu}{\color{blue}{\texttt{drobin@kent.edu}}}
+        \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+
+
+\section The M/M/1 Queue }
+
+
+
+\begin{frame} 
+\frametitle{  The M/M/1 Queue }
+\framesubtitle{\textbf{\textit{}}}
+\begin{itemize}
+\item  \textbf{Continuous-Time Markov Chain (CTMC)}:  a continuous-time
+stochastic process $\{X(t), t \geq 0\}$ s.t., $ \forall s, t \geq 0$ and $ \forall i, j, x(u)$,
+$$P \{X(t + s) = j | X(s) = i, X(u) = x(u), 0 \leq u \leq s\}  $$
+$$= P \{X(t + s) = j | X(s) = i\} (by M.P.) $$
+$$ = P \{X(t) = j | X(0) = i\} = P_{ij} (t) (stationarity)$$
+\item We assume throughout that the state space is countable (though continuous)
+\item  $\tau_i =$ time until the CTMC leaves state $i$, given that it is currently in state i. 
+\item $\tau_i $ is memoryless and exponentially distributed
+
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\end{document}

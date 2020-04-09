@@ -1,0 +1,3 @@
+\beamer@sectionintoc {1}{ Continuous-Time Markov Chain (CTMC) }{3}{0}{1}
+\beamer@sectionintoc {2}{ Solving CTMCs}{6}{0}{2}
+\beamer@sectionintoc {3}{Appllicability of DTMC results}{8}{0}{3}

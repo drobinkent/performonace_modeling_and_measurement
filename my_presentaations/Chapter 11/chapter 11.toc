@@ -1,1 +1,4 @@
 \beamer@sectionintoc {1}{ Definition of the Exponential Distribution}{3}{0}{1}
+\beamer@sectionintoc {2}{Properties of Exp. Dis.}{4}{0}{2}
+\beamer@sectionintoc {3}{Relation with other Distribution}{8}{0}{3}
+\beamer@sectionintoc {4}{Relation with Poisson Process}{9}{0}{4}

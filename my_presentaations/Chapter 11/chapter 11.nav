@@ -7,12 +7,31 @@
 \headcommand {\sectionentry {1}{ Definition of the Exponential Distribution}{3}{ Definition of the Exponential Distribution}{0}}
 \headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\slideentry {1}{0}{2}{4/4}{}{0}}
+\headcommand {\beamer@sectionpages {3}{3}}
+\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\sectionentry {2}{Properties of Exp. Dis.}{4}{Properties of Exp. Dis.}{0}}
+\headcommand {\slideentry {2}{0}{1}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\slideentry {1}{0}{3}{5/5}{}{0}}
+\headcommand {\slideentry {2}{0}{2}{5/5}{}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\beamer@partpages {1}{5}}
-\headcommand {\beamer@subsectionpages {3}{5}}
-\headcommand {\beamer@sectionpages {3}{5}}
-\headcommand {\beamer@documentpages {5}}
-\headcommand {\gdef \inserttotalframenumber {5}}
+\headcommand {\slideentry {2}{0}{3}{6/6}{}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\slideentry {2}{0}{4}{7/7}{}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\beamer@sectionpages {4}{7}}
+\headcommand {\beamer@subsectionpages {4}{7}}
+\headcommand {\sectionentry {3}{Relation with other Distribution}{8}{Relation with other Distribution}{0}}
+\headcommand {\slideentry {3}{0}{1}{8/8}{}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@sectionpages {8}{8}}
+\headcommand {\beamer@subsectionpages {8}{8}}
+\headcommand {\sectionentry {4}{Relation with Poisson Process}{9}{Relation with Poisson Process}{0}}
+\headcommand {\slideentry {4}{0}{1}{9/9}{}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {4}{0}{2}{10/10}{}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@partpages {1}{10}}
+\headcommand {\beamer@subsectionpages {9}{10}}
+\headcommand {\beamer@sectionpages {9}{10}}
+\headcommand {\beamer@documentpages {10}}
+\headcommand {\gdef \inserttotalframenumber {10}}
