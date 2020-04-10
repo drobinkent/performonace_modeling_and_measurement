@@ -1,0 +1,3 @@
+\beamer@sectionintoc {1}{The M/M/1 Queue }{3}{0}{1}
+\beamer@sectionintoc {2}{M/M/1 Queue Example}{6}{0}{2}
+\beamer@sectionintoc {3}{PASTA }{7}{0}{3}
